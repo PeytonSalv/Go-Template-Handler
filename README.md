@@ -1,2 +1,3 @@
 # Go-Template-Handler
 GoLang Template Handler
+This program creates an HTTP server that listens on port 8080 and serves an index.html template and a style.css file stored in the current directory. When a request is received, the server looks for the index.html and style.css files using the filepath.Glob function. If the index.html file is not found, it returns a 404 Not Found error. If the index.html file is found, it sets the Content-Type header to text/html and parses the template. It then defines the data for the template as an instance of the PageData struct and renders the template with the given data. If the style.css file is found, it sets the Content-Type header to text/css and serves the file to the
